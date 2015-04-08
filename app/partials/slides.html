@@ -1,0 +1,14 @@
+
+<div ng-controller="SlideListController"
+  ng-init="baseUrl='http://res.cloudinary.com/misberri/image/upload/'">
+  <div class="header">
+
+    <div class="grid-face">
+      <div class="face" ng-repeat="slide in slides" >
+        <img ng-src="{{baseUrl + slide.look.image.cloudinary_public_id}}">
+        <div class="mask"></div>
+      </div>
+    </div>
+  
+  </div>
+</div>
